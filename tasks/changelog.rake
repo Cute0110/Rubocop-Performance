@@ -14,7 +14,7 @@ namespace :changelog do
     end
   end
 
-  desc 'Merge entries and delete them'
+  desc 'Merge entries and also delete them'
   task :merge do
     raise 'No entries!' unless Changelog.pending?
 
